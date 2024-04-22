@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(day4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h3 {
+  font-weight: 400;
+  color: #333;
+}
+
+/* .weather-app {
+  min-height: 100vh;
+  color: #333;
+  position: relative;
+  transition: 500ms;
+  opacity: 1;
+} */
+.weather-app {
+  min-height: 100vh;
+  color: #333;
+  position: relative;
+  transition: 500ms;
+  opacity: 1;
+  background-image: url(day4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjusted background-size property */
+}
+
+
+.container {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(50%, -50%);
+  width: 45%;
+  max-width: 400px; /* Adjusted max-width for better responsiveness */
+  padding: 2em;
+  background-color: rgba(39, 14, 14, 0.2);
+  border-radius: 10px;
+  color: white;
+}
+
+
+.brand h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.weather-info {
+  text-align: center;
+}
+
+.temp {
+  font-size: 7em;
+  margin: 0;
+}
+
+.weather img {
+  display: block;
+  margin: 0.5em auto;
+}
+
+.panel {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  max-width: 400px; /* Added max-width to prevent it from going outside the screen */
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2em;
+}
+
+
+
+.submit {
+  margin-top: 1em;
+  padding: 0.5em 2em;
+  background: #fa6d1b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #333;
+}
+
+.search {
+  width: calc(100% - 40px);
+  margin-right: 10px;
+  padding: 0.5em;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.search::placeholder {
+  color: #ccc;
+}
+
+.cities {
+  list-style: none;
+  padding: 0;
+}
+
+.city {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.city:hover {
+  background: #e0e0e0;
+}
+
+.details {
+  margin-top: 2em;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #ccc;
+}
+
+.details h4 {
+  margin-top: 0;
+}
+
+.details li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.name{
+  color:white;
+}
