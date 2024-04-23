@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Weather.io</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/images/day/rainy.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+        }
+
+        .instruction {
+            margin-top: 20px;
+        }
+
+        .mode-buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #944b21;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #cc5118;
+        }
+
+        .offline-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .offline-link a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Weather.io</h1>
+        <p class="instruction">Select the mode</p>
+        <div class="mode-buttons">
+            <a href="index.html" class="button">Go Online</a>
+        </div>
+        <p class="offline-link"><a href="offindex.html">View Offline</a></p>
+    </div>
+</body>
+</html>
