@@ -61,6 +61,7 @@ function fetchWeatherData() {
     .then((data) => {
       if (data.error) {
         alert("City not found on database");
+        app.style.opacity = "1";
         return;
       }
       console.log(data);
@@ -68,7 +69,7 @@ function fetchWeatherData() {
       const localTime = new Date(data.date);
       const dayOfWeek = localTime.toLocaleDateString("en-US", {
         weekday: "long",
-      }); // Get the full name of the day
+      });
 
       temp.innerHTML = data.temp + "&#176;";
       conditionOutput.innerHTML = data.condition;
@@ -79,7 +80,6 @@ function fetchWeatherData() {
       const d = parseInt(date.substr(8, 2));
       const time = date.substr(11);
 
-      // dateOutput.innerHTML = `${dayOfTheWeek(d,m,y)} ${d}, ${m} ${y}`;
       dateOutput.innerHTML = `${dayOfWeek}, ${localTime.getDate()} ${localTime.toLocaleString(
         "en-US",
         { month: "long" }
@@ -168,7 +168,7 @@ function fetchWeatherData() {
       app.style.opacity = "1";
     })
     .catch(() => {
-      alert("city not found, please try again");
+      alert("City not found,please check the spelling and the internet connection");
       app.style.opacity = "1";
     });
 }
